@@ -1,18 +1,18 @@
 // CATEGORIES ROUTE 
 // Get all categories
-GET http://localhost:8000/categories
+GET http://localhost:3000/categories
 
 ###
 // Get all jokes from a category
-GET http://localhost:8000/categories/Bike
+GET http://localhost:3000/categories/Bike
 
 ###
 // Get a random joke from a category
-GET http://localhost:8000/categories/Rocket/random
+GET http://localhost:3000/categories/Rocket/random
 
 ###
 // Create a new category
-POST http://localhost:8000/categories
+POST http://localhost:3000/categories
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 // Create a new joke in a category
-POST http://localhost:8000/categories/Bike
+POST http://localhost:3000/categories/Bike
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 ###
 // Add an existing joke to a category by joke id
-PATCH  http://localhost:8000/categories/Train/61644d93dee4cbf967703992
+PATCH  http://localhost:3000/categories/Train/61644d93dee4cbf967703992
 
 
 
@@ -40,21 +40,21 @@ PATCH  http://localhost:8000/categories/Train/61644d93dee4cbf967703992
 // JOKES ROUTE
 ###
 // Get all jokes
-GET http://localhost:8000/jokes
+GET http://localhost:3000/jokes
 
 ###
 // Get a joke by its id
-GET http://localhost:8000/jokes/6161afdd59c4ae7603246a92
+GET http://localhost:3000/jokes/6161afdd59c4ae7603246a92
 
 ###
 // Get a random joke from all jokes
-GET http://localhost:8000/jokes/random
+GET http://localhost:3000/jokes/random
 
 ###
 // Give a joke a like or dislike
-PATCH  http://localhost:8000/jokes/61644d93dee4cbf967703992/favor/dislike
+PATCH  http://localhost:3000/jokes/61644d93dee4cbf967703992/favor/dislike
 
 
 ###
 // Delete all jokes
-DELETE  http://localhost:8000/jokes
+DELETE  http://localhost:3000/jokes
