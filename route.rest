@@ -1,18 +1,18 @@
 // CATEGORIES ROUTE 
 // Get all categories
-GET http://localhost:3000/categories
+GET https://joke-api-hoang-jevgeni.herokuapp.com/categories
 
 ###
 // Get all jokes from a category
-GET http://localhost:3000/categories/Bike
+GET https://joke-api-hoang-jevgeni.herokuapp.com/categories/Bike
 
 ###
 // Get a random joke from a category
-GET http://localhost:3000/categories/Rocket/random
+GET https://joke-api-hoang-jevgeni.herokuapp.com/categories/Rocket/random
 
 ###
 // Create a new category
-POST http://localhost:3000/categories
+POST https://joke-api-hoang-jevgeni.herokuapp.com/categories
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 // Create a new joke in a category
-POST http://localhost:3000/categories/Bike
+POST https://joke-api-hoang-jevgeni.herokuapp.com/categories/Bike
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 ###
 // Add an existing joke to a category by joke id
-PATCH  http://localhost:3000/categories/Train/61644d93dee4cbf967703992
+PATCH  https://joke-api-hoang-jevgeni.herokuapp.com/categories/Train/61644d93dee4cbf967703992
 
 
 
@@ -40,21 +40,21 @@ PATCH  http://localhost:3000/categories/Train/61644d93dee4cbf967703992
 // JOKES ROUTE
 ###
 // Get all jokes
-GET http://localhost:3000/jokes
+GET https://joke-api-hoang-jevgeni.herokuapp.com/jokes
 
 ###
 // Get a joke by its id
-GET http://localhost:3000/jokes/6161afdd59c4ae7603246a92
+GET https://joke-api-hoang-jevgeni.herokuapp.com/jokes/6161afdd59c4ae7603246a92
 
 ###
 // Get a random joke from all jokes
-GET http://localhost:3000/jokes/random
+GET https://joke-api-hoang-jevgeni.herokuapp.com/jokes/random
 
 ###
 // Give a joke a like or dislike
-PATCH  http://localhost:3000/jokes/61644d93dee4cbf967703992/favor/dislike
+PATCH  https://joke-api-hoang-jevgeni.herokuapp.com/jokes/61644d93dee4cbf967703992/favor/dislike
 
 
 ###
 // Delete all jokes
-DELETE  http://localhost:3000/jokes
+DELETE  https://joke-api-hoang-jevgeni.herokuapp.com/jokes
